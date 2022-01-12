@@ -21,32 +21,42 @@ export default function Target() {
         <View style={{flex: 2}}>
           <Text style={styles.text}>Target v/s Achievement</Text>
         </View>
-
         <View
           style={{
             flexDirection: 'row',
-            justifyContent: 'flex-end',
-            alignItems: 'flex-end',
-            flex: 1,
-            marginRight: 15,
+            marginTop: 10,
+            width: 140,
+            height: 25,
           }}>
-          <View
+          <TouchableOpacity
             style={{
               borderWidth: 1,
+              borderRadius: 1,
+              borderTopLeftRadius: 3,
+              borderBottomLeftRadius: 3,
+              borderRightWidth: 0,
               backgroundColor: 'white',
               height: 25,
-              flex: 0.7,
+              flex: 0.75,
+              justifyContent: 'center',
             }}>
-            <View style={{flexDirection: 'row'}}>
-              <Text style={{alignItems: 'center', marginTop: 3, fontSize: 13}}>
-                {qtr}
-              </Text>
-            </View>
-          </View>
+            <Text
+              style={{alignItems: 'center', textAlign: 'center', fontSize: 15}}>
+              {qtr}
+            </Text>
+          </TouchableOpacity>
           <TouchableOpacity
-            style={{borderWidth: 1, backgroundColor: '#e5e5e5', height: 25}}
+            style={{
+              borderWidth: 1,
+              backgroundColor: '#e5e5e5',
+              flex: 0.15,
+              borderTopRightRadius: 3,
+              borderBottomRightRadius: 3,
+              borderLeftWidth: 0,
+              alignItems: 'center',
+            }}
             onPress={() => {}}>
-            <Ionicons name="ios-caret-down" size={18} />
+            <Ionicons name="ios-caret-down" size={20} />
           </TouchableOpacity>
         </View>
       </View>
@@ -83,7 +93,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginLeft: 20,
     fontSize: 15,
-    fontWeight: '500',
+    fontWeight: '700',
     color: '#444444',
   },
   text1: {

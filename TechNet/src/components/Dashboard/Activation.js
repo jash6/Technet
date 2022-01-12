@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
-import {Col, Row, Grid} from 'react-native-easy-grid';
+import {View, Text, TouchableOpacity, Button, Platform} from 'react-native';
+import DateTimePickerModal from 'react-native-modal-datetime-picker';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 export default function Activation() {
   const [model, SetModel] = useState([
     {Name: 'M515DA-EJ312TS', ST: '1', ACT: '22', N_ACT: '22'},
@@ -10,6 +12,21 @@ export default function Activation() {
     {Name: 'FX566IH-HN258J', ST: '3', ACT: '4', N_ACT: '43'},
   ]);
   const [clicked, Setclicked] = useState(false);
+  const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
+
+  const showDatePicker = () => {
+    setDatePickerVisibility(true);
+  };
+
+  const hideDatePicker = () => {
+    setDatePickerVisibility(false);
+  };
+
+  const handleConfirm = date => {
+    console.warn('A date has been picked: ', date);
+    hideDatePicker();
+  };
+
   const filtered = [];
   for (let i = 0; i < 3; i++) {
     filtered.push(model[i]);
@@ -19,16 +36,61 @@ export default function Activation() {
   useEffect(() => {}, [clicked]);
   return (
     <View>
-      <View>
+      <View style={{flexDirection: 'row'}}>
         <Text
           style={{
             margin: 10,
             fontSize: 15,
-            fontWeight: '500',
+            fontWeight: '700',
             color: '#444444',
+            flex: 2,
           }}>
           Activation Performance
         </Text>
+        <View>
+          <TouchableOpacity onPress={showDatePicker}>
+            <View
+              style={{
+                flexDirection: 'row',
+                height: 25,
+                marginTop: 7,
+                width: 140,
+              }}>
+              <View
+                style={{
+                  backgroundColor: 'white',
+                  borderWidth: 1,
+                  borderTopLeftRadius: 3,
+                  borderBottomLeftRadius: 3,
+                  borderRightWidth: 0,
+                  flex: 0.7,
+                }}>
+                <Text style={{textAlign: 'center', fontSize: 16}}>
+                  Select Date
+                </Text>
+              </View>
+              <View
+                style={{
+                  // marginLeft: 5,
+                  backgroundColor: '#e5e5e5',
+                  borderWidth: 1,
+                  borderTopRightRadius: 3,
+                  borderBottomRightRadius: 3,
+                  borderLeftWidth: 0,
+                  flex: 0.2,
+                  alignItems: 'center',
+                }}>
+                <MaterialIcons name="date-range" size={23} />
+              </View>
+            </View>
+          </TouchableOpacity>
+          <DateTimePickerModal
+            isVisible={isDatePickerVisible}
+            mode="date"
+            onConfirm={handleConfirm}
+            onCancel={hideDatePicker}
+          />
+        </View>
       </View>
       <View
         style={{
