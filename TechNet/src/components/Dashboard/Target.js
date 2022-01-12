@@ -1,24 +1,38 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 export default function Target() {
+  const [target, Settarget] = useState(120);
+  const [current, Setcurrent] = useState(60);
+  const percent = (current / target) * 100;
   return (
     <View>
       <View>
         <Text style={styles.text}>Target v/s Achievement</Text>
       </View>
       <View style={styles.box}>
-        <Text style={styles.text1}>Target: 120</Text>
+        <Text style={styles.text1}>Target: {target}</Text>
         <View style={styles.container}>
           <Ionicons name="trophy-sharp" size={23} />
-          <Text style={styles.text2}>60</Text>
+          <Text style={styles.text2}>{current}</Text>
         </View>
-        <View>
+        <View style={{flexDirection: 'row'}}>
           <View style={styles.progressbar}>
             <View style={styles.progress} />
-            <Text>50%</Text>
           </View>
+          <Text style={{fontSize: 16, marginTop: 7}}>{percent}%</Text>
         </View>
+        <TouchableOpacity style={styles.text3}>
+          <Text
+            style={{
+              color: '#70b4ff',
+              margin: 10,
+              fontSize: 13,
+              fontWeight: '600',
+            }}>
+            See More
+          </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -29,7 +43,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginLeft: 20,
     fontSize: 15,
-    fontWeight: '600',
+    fontWeight: '500',
+    color: '#444444',
   },
   text1: {
     marginLeft: 10,
@@ -42,13 +57,16 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
   },
+  text3: {
+    alignItems: 'flex-end',
+  },
   container: {
     marginLeft: 10,
     marginTop: 10,
     flexDirection: 'row',
   },
   box: {
-    height: 110,
+    // height: 110,
     margin: 10,
     borderRadius: 5,
     borderWidth: 1,
