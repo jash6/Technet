@@ -1,14 +1,54 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  TextInput,
+  Modal,
+} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 export default function Target() {
   const [target, Settarget] = useState(120);
   const [current, Setcurrent] = useState(60);
+  const [qtr, Setqtr] = useState('Select QTR');
+  const [modalVisible, setModalVisible] = useState(false);
+  const list = ['1', '2', '3', '4'];
   const percent = (current / target) * 100;
   return (
     <View>
-      <View>
-        <Text style={styles.text}>Target v/s Achievement</Text>
+      <View style={{flexDirection: 'row'}}>
+        <View style={{flex: 2}}>
+          <Text style={styles.text}>Target v/s Achievement</Text>
+        </View>
+
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'flex-end',
+            alignItems: 'flex-end',
+            flex: 1,
+            marginRight: 15,
+          }}>
+          <View
+            style={{
+              borderWidth: 1,
+              backgroundColor: 'white',
+              height: 25,
+              flex: 0.7,
+            }}>
+            <View style={{flexDirection: 'row'}}>
+              <Text style={{alignItems: 'center', marginTop: 3, fontSize: 13}}>
+                {qtr}
+              </Text>
+            </View>
+          </View>
+          <TouchableOpacity
+            style={{borderWidth: 1, backgroundColor: '#e5e5e5', height: 25}}
+            onPress={() => {}}>
+            <Ionicons name="ios-caret-down" size={18} />
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={styles.box}>
         <Text style={styles.text1}>Target: {target}</Text>
