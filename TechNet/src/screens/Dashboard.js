@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import Header from '../components/Dashboard/Header';
 import Target from '../components/Dashboard/Target';
 import Performance from '../components/Dashboard/Performance';
@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 
 export default function Dashboard() {
   return (
-    <View>
+    <ScrollView>
       {/* Header Section */}
       <Header />
       {/* Target vs Achievement */}
@@ -18,7 +18,7 @@ export default function Dashboard() {
       {/* Performance Table */}
       <Performance />
       {/* Footer */}
-      <Footer />
-    </View>
+      {/* <Footer /> */}
+    </ScrollView>
   );
 }

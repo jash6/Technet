@@ -1,3 +1,4 @@
+import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {
   SafeAreaView,
@@ -7,12 +8,14 @@ import {
   Text,
   View,
 } from 'react-native';
+import RootNavigation from './Navigation';
 import Dashboard from './src/screens/Dashboard';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Dashboard />
+      {/* <Dashboard /> */}
+      <RootNavigation />
     </View>
   );
 };

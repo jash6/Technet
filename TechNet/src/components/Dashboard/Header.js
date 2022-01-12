@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginBottom: 5,
     fontSize: 25,
-    fontFamily: 'Ubuntu-Light',
+    // fontFamily: 'Ubuntu-Light',
     color: 'white',
   },
   text2: {
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     fontSize: 25,
     fontWeight: 'bold',
-    fontFamily: 'Ubuntu-Bold',
+    // fontFamily: 'Ubuntu-Bold',
     color: 'white',
   },
   icon: {
