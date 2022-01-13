@@ -10,9 +10,8 @@ export default function Claim() {
   return (
     <View>
       <Header />
-      {/* <Toggle /> */}
-
-      <Retailer />
+      <Toggle />
+      {/* <Retailer /> */}
     </View>
   );
 }

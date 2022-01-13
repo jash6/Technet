@@ -4,7 +4,7 @@ import {View, Text} from 'react-native';
 export default function Reseller() {
   return (
     <View>
-      <Text></Text>
+      <Text>Reseller</Text>
     </View>
   );
 }
