@@ -11,6 +11,7 @@ export default function Claim() {
     <View>
       <Header />
       {/* <Toggle /> */}
+
       <Retailer />
     </View>
   );

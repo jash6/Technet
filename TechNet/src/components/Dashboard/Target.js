@@ -8,6 +8,8 @@ import {
   Modal,
 } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Filters from '../Claim/Filters';
+
 export default function Target() {
   const [target, Settarget] = useState(120);
   const [current, Setcurrent] = useState(60);
@@ -21,44 +23,12 @@ export default function Target() {
         <View style={{flex: 2}}>
           <Text style={styles.text}>Target v/s Achievement</Text>
         </View>
-        <View
-          style={{
-            flexDirection: 'row',
-            marginTop: 10,
-            width: 140,
-            height: 25,
-          }}>
-          <TouchableOpacity
-            style={{
-              borderWidth: 1,
-              borderRadius: 1,
-              borderTopLeftRadius: 3,
-              borderBottomLeftRadius: 3,
-              borderRightWidth: 0,
-              backgroundColor: 'white',
-              height: 25,
-              flex: 0.75,
-              justifyContent: 'center',
-            }}>
-            <Text
-              style={{alignItems: 'center', textAlign: 'center', fontSize: 15}}>
-              {qtr}
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              borderWidth: 1,
-              backgroundColor: '#e5e5e5',
-              flex: 0.15,
-              borderTopRightRadius: 3,
-              borderBottomRightRadius: 3,
-              borderLeftWidth: 0,
-              alignItems: 'center',
-            }}
-            onPress={() => {}}>
-            <Ionicons name="ios-caret-down" size={20} />
-          </TouchableOpacity>
-        </View>
+
+        <Filters
+          placeholder={'Set QTR'}
+          array={['1', '2', '3', '4']}
+          width={140}
+        />
       </View>
       <View style={styles.box}>
         <Text style={styles.text1}>Target: {target}</Text>
