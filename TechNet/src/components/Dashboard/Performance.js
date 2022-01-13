@@ -5,10 +5,6 @@ import Sellout from './Sellout';
 import Inventory from './Inventory';
 
 export default function Performance() {
-  // const [analysis, Setanalysis] = useState(true);
-  // const [sellout, Setsellout] = useState(false);
-  // const [inventory, Setinventory] = useState(false);
-
   const [metrics, Setmetrics] = useState([true, false, false]);
 
   return (

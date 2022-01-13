@@ -1,11 +1,14 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import Dashboard from './screens/../src/screens/Dashboard';
 import Claim from './screens/../src/screens/Claim';
 import Demo from './screens/../src/screens/Demo';
 import Account from './screens/../src/screens/Account';
 import More from './screens/../src/screens/More';
+import Reseller from './src/components/Claim/Reseller';
+import Retailer from './src/components/Claim/Retailer';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -15,6 +18,17 @@ export default function RootNavigation() {
   const screenOptions = {
     headerShown: false,
   };
+
+  // const Tab = createMaterialTopTabNavigator();
+
+  // function MyTabs() {
+  //   return (
+  //     <Tab.Navigator>
+  //       <Tab.Screen name="Reseller (AWP)" component={Reseller} />
+  //       <Tab.Screen name="Retail" component={Retailer} />
+  //     </Tab.Navigator>
+  //   );
+  // }
 
   return (
     <NavigationContainer>
