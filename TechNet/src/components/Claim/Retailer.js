@@ -136,6 +136,7 @@ const styles = StyleSheet.create({
   scroll: {
     marginTop: 20,
     borderWidth: 1,
+    height: 300,
   },
   text: {
     fontWeight: 'bold',
