@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, Modal} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Popup from './Popup';
-import List from './List';
+
 export default function Scroll(props) {
   const [clicked, setClicked] = useState(false);
   const [clickedeye, setClickedeye] = useState(false);
@@ -31,31 +31,44 @@ export default function Scroll(props) {
                 setClicked(false);
               }}
               style={styles.icon}>
-              <MaterialIcons name="keyboard-arrow-down" size={30} />
+              <MaterialIcons
+                name="keyboard-arrow-down"
+                style={{color: 'black'}}
+                size={30}
+              />
             </TouchableOpacity>
           </View>
           <View style={styles.common}>
             <View style={styles.trow1}>
-              <Text style={[styles.ttext, {flex: 2, borderWidth: 1}]}>
+              <Text style={[styles.ttext, {flex: 1.2, borderWidth: 1}]}>
                 Name
               </Text>
               <Text style={[styles.ttext, {flex: 1, borderWidth: 1}]}>
                 Amount
               </Text>
-              <Text style={[styles.ttext, {flex: 1, borderWidth: 1}]}>
+              <Text style={[styles.ttext, {flex: 0.8, borderWidth: 1}]}>
                 Status
               </Text>
               <Text style={{flex: 1, borderWidth: 1}}></Text>
             </View>
             {companies.map(x => (
               <View style={styles.align}>
-                <Text style={[styles.ttext1, {flex: 2, borderWidth: 1}]}>
+                <Text style={[styles.ttext1, {flex: 1.2, borderWidth: 1}]}>
                   {x.Name}
                 </Text>
                 <Text style={[styles.ttext1, {flex: 1, borderWidth: 1}]}>
                   {x.Amount}
                 </Text>
-                <Text style={[styles.ttext1, {flex: 1, borderWidth: 1}]}>
+                <Text
+                  style={[
+                    styles.ttext1,
+                    {
+                      flex: 0.8,
+                      borderWidth: 1,
+                      fontWeight: 'bold',
+                      color: x.Status == 'Closed' ? '#7fe1ad' : '#70b4ff',
+                    },
+                  ]}>
                   {x.Status}
                 </Text>
                 <View style={[styles.ttext1, {flex: 1, borderWidth: 1}]}>
@@ -63,8 +76,12 @@ export default function Scroll(props) {
                     onPress={() => {
                       setClickedeye(true);
                     }}
-                    style={styles.icon1}>
-                    <MaterialIcons name="remove-red-eye" size={30} />
+                    style={styles.icon2}>
+                    <MaterialIcons
+                      name="remove-red-eye"
+                      style={{color: 'black'}}
+                      size={30}
+                    />
                   </TouchableOpacity>
                 </View>
               </View>
@@ -73,7 +90,11 @@ export default function Scroll(props) {
               //   animationType="slide"
               transparent={true}
               visible={clickedeye}>
-              <Popup onClose={() => setClickedeye(false)} />
+              <Popup
+                onClose={() => setClickedeye(false)}
+                name={'Rajesh Computer'}
+                no={'IN232661AT03003'}
+              />
             </Modal>
           </View>
           <View style={styles.row3}>
@@ -107,7 +128,11 @@ export default function Scroll(props) {
               onPress={() => {
                 setClicked(true);
               }}>
-              <MaterialIcons name="keyboard-arrow-right" size={30} />
+              <MaterialIcons
+                name="keyboard-arrow-right"
+                style={{color: 'black'}}
+                size={30}
+              />
             </TouchableOpacity>
           </View>
         </View>
@@ -119,6 +144,7 @@ export default function Scroll(props) {
 const styles = StyleSheet.create({
   common: {
     marginLeft: 10,
+    marginRight: 10,
   },
   align: {
     flexDirection: 'row',
@@ -156,6 +182,11 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'center',
   },
+  icon2: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   trow1: {
     flexDirection: 'row',
     backgroundColor: '#e5e5e5',
@@ -166,5 +197,11 @@ const styles = StyleSheet.create({
     color: 'black',
     textAlign: 'center',
     justifyContent: 'center',
+  },
+  ttext1: {
+    textAlign: 'center',
+    justifyContent: 'center',
+    fontSize: 15,
+    color: 'black',
   },
 });

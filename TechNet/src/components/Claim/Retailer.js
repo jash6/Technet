@@ -99,6 +99,9 @@ export default function Retailer() {
         <List name={'Dotnet(HO)'} no={'IN232661AT03023'} />
         <List name={'Emart 4 u (HO)'} no={'IN232661AR03045'} /> */}
         <Scroll name={'Andhra Pradesh'} no={'15'} />
+        <Scroll name={'Pune'} no={'15'} />
+        <Scroll name={'Job'} no={'15'} />
+        <Scroll name={'Gujrat'} no={'15'} />
       </ScrollView>
     </View>
   );
