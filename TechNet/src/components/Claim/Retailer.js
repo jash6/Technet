@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import Dropdowns from './Dropdowns';
 import List from './List';
+import Scroll from './Scroll';
 import Filters from './Filters';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -94,9 +95,10 @@ export default function Retailer() {
         </View>
       </View>
       <ScrollView style={styles.scroll}>
-        <List name={'Chokhani Computers PVT LTD(HO)'} no={'IN232661AT03003'} />
+        {/* <List name={'Chokhani Computers PVT LTD(HO)'} no={'IN232661AT03003'} />
         <List name={'Dotnet(HO)'} no={'IN232661AT03023'} />
-        <List name={'Emart 4 u (HO)'} no={'IN232661AR03045'} />
+        <List name={'Emart 4 u (HO)'} no={'IN232661AR03045'} /> */}
+        <Scroll name={'Andhra Pradesh'} no={'15'} />
       </ScrollView>
     </View>
   );
