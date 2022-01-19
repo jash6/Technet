@@ -241,6 +241,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     fontSize: 15,
     color: 'black',
-    borderRightWidth: 1,
   },
 });

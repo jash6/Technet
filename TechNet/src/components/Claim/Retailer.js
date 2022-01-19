@@ -7,13 +7,11 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import Dropdowns from './Dropdowns';
-import List from './List';
+
 import Scroll from './Scroll';
 import Filters from './Filters';
 import Circle from './Circle';
-import DateTimePickerModal from 'react-native-modal-datetime-picker';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 export default function Retailer() {
   const [clickeditem, setClickedItem] = useState(false);
 
@@ -149,7 +147,7 @@ const styles = StyleSheet.create({
   scroll: {
     // marginTop: 20,
     borderWidth: 1,
-    height: 400,
+    height: 320,
   },
   text: {
     fontWeight: 'bold',
