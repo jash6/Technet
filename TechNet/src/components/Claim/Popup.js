@@ -84,11 +84,11 @@ export default function Popup(props) {
               <View style={{flexDirection: 'row'}}>
                 <View style={[styles.container, {flex: 1}]}>
                   <Text style={styles.text2}>Pre Tax: </Text>
-                  <Text style={styles.text3}> 105786.00</Text>
+                  <Text style={styles.text3}> 145786.00</Text>
                 </View>
                 <View style={[styles.container, {flex: 1}]}>
                   <Text style={styles.text2}>After Tax: </Text>
-                  <Text style={styles.text3}> 124827.48</Text>
+                  <Text style={styles.text3}> 148827.48</Text>
                 </View>
               </View>
             </View>

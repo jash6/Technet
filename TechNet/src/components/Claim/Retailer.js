@@ -106,7 +106,7 @@ export default function Retailer() {
           <Scroll name={'Andhra Pradesh'} no={'15'} />
           <Scroll name={'Pune'} no={'15'} />
           <Scroll name={'Job'} no={'15'} />
-          <Scroll name={'Gujrat'} no={'15'} />
+          <Scroll name={'Gujarat'} no={'15'} />
         </ScrollView>
       </View>
     </View>
