@@ -40,38 +40,40 @@ export default function Scroll(props) {
           </View>
           <View style={styles.common}>
             <View style={styles.trow1}>
-              <Text style={[styles.ttext, {flex: 1.2, borderWidth: 1}]}>
-                Name
-              </Text>
-              <Text style={[styles.ttext, {flex: 1, borderWidth: 1}]}>
-                Amount
-              </Text>
-              <Text style={[styles.ttext, {flex: 0.8, borderWidth: 1}]}>
-                Status
-              </Text>
-              <Text style={{flex: 1, borderWidth: 1}}></Text>
+              <View style={{flex: 1.2, borderRightWidth: 1}}>
+                <Text style={styles.ttext}>Name</Text>
+              </View>
+              <View style={{flex: 1, borderRightWidth: 1}}>
+                <Text style={styles.ttext}>Amount</Text>
+              </View>
+              <View style={{flex: 0.8, borderRightWidth: 1}}>
+                <Text style={styles.ttext}>Status</Text>
+              </View>
+              <View style={{flex: 1, borderRightWidth: 0}}>
+                <Text></Text>
+              </View>
             </View>
             {companies.map(x => (
-              <View style={styles.align}>
-                <Text style={[styles.ttext1, {flex: 1.2, borderWidth: 1}]}>
-                  {x.Name}
-                </Text>
-                <Text style={[styles.ttext1, {flex: 1, borderWidth: 1}]}>
-                  {x.Amount}
-                </Text>
-                <Text
-                  style={[
-                    styles.ttext1,
-                    {
-                      flex: 0.8,
-                      borderWidth: 1,
-                      fontWeight: 'bold',
-                      color: x.Status == 'Closed' ? '#7fe1ad' : '#70b4ff',
-                    },
-                  ]}>
-                  {x.Status}
-                </Text>
-                <View style={[styles.ttext1, {flex: 1, borderWidth: 1}]}>
+              <View style={[styles.align, {borderWidth: 1, borderTopWidth: 0}]}>
+                <View style={{flex: 1.2, borderRightWidth: 1}}>
+                  <Text style={styles.ttext1}>{x.Name}</Text>
+                </View>
+                <View style={{flex: 1, borderRightWidth: 1}}>
+                  <Text style={styles.ttext1}>{x.Amount}</Text>
+                </View>
+                <View style={{flex: 0.8, borderRightWidth: 1}}>
+                  <Text
+                    style={[
+                      styles.ttext1,
+                      {
+                        fontWeight: 'bold',
+                        color: x.Status == 'Closed' ? '#7fe1ad' : '#70b4ff',
+                      },
+                    ]}>
+                    {x.Status}
+                  </Text>
+                </View>
+                <View style={{flex: 1, borderRightWidth: 0}}>
                   <TouchableOpacity
                     onPress={() => {
                       setClickedeye(true);
@@ -190,6 +192,8 @@ const styles = StyleSheet.create({
   trow1: {
     flexDirection: 'row',
     backgroundColor: '#e5e5e5',
+    height: 40,
+    borderWidth: 1,
   },
   ttext: {
     fontSize: 17,
@@ -197,11 +201,14 @@ const styles = StyleSheet.create({
     color: 'black',
     textAlign: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 5,
   },
   ttext1: {
     textAlign: 'center',
     justifyContent: 'center',
     fontSize: 15,
     color: 'black',
+    borderRightWidth: 1,
   },
 });

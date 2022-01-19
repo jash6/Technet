@@ -11,30 +11,33 @@ import Dropdowns from './Dropdowns';
 import List from './List';
 import Scroll from './Scroll';
 import Filters from './Filters';
+import Circle from './Circle';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 export default function Retailer() {
   const [clickeditem, setClickedItem] = useState(false);
 
   return (
-    <View style={styles.box}>
-      <View style={{marginLeft: 15, flexDirection: 'row'}}>
-        <View style={{flex: 1}}>
-          <Filters
-            placeholder={'Partner Type'}
-            array={['Large', 'SME', 'Government']}
-            width={160}
-          />
-        </View>
-        <View style={{flex: 1, marginLeft: 20}}>
-          <Filters
-            placeholder={'Set QTR'}
-            array={['1', '2', '3', '4']}
-            width={160}
-          />
+    <View>
+      <View style={{marginBottom: 20}}>
+        <View style={{marginLeft: 15, flexDirection: 'row'}}>
+          <View style={{flex: 1}}>
+            <Filters
+              placeholder={'Activation Schema'}
+              array={['Large', 'SME', 'Government']}
+              width={170}
+            />
+          </View>
+          <View style={{flex: 1, marginLeft: 20}}>
+            <Filters
+              placeholder={'Set QTR'}
+              array={['1', '2', '3', '4']}
+              width={170}
+            />
+          </View>
         </View>
       </View>
-      <View style={{marginLeft: 15, flexDirection: 'row', marginTop: 10}}>
+      {/* <View style={{marginLeft: 15, flexDirection: 'row', marginTop: 10}}>
         <View style={{flex: 1}}>
           <Filters
             placeholder={'Start Month'}
@@ -75,8 +78,8 @@ export default function Retailer() {
             width={160}
           />
         </View>
-      </View>
-      <View style={{marginLeft: 15, marginTop: 10}}>
+      </View> */}
+      {/* <View style={{marginLeft: 15, marginTop: 10}}>
         <View>
           <Filters
             placeholder={'Claim Code'}
@@ -93,16 +96,21 @@ export default function Retailer() {
             width={370}
           />
         </View>
+      </View> */}
+      <View style={{marginBottom: 20}}>
+        <Circle />
       </View>
-      <ScrollView style={styles.scroll}>
-        {/* <List name={'Chokhani Computers PVT LTD(HO)'} no={'IN232661AT03003'} />
+      <View style={styles.box}>
+        <ScrollView style={styles.scroll}>
+          {/* <List name={'Chokhani Computers PVT LTD(HO)'} no={'IN232661AT03003'} />
         <List name={'Dotnet(HO)'} no={'IN232661AT03023'} />
         <List name={'Emart 4 u (HO)'} no={'IN232661AR03045'} /> */}
-        <Scroll name={'Andhra Pradesh'} no={'15'} />
-        <Scroll name={'Pune'} no={'15'} />
-        <Scroll name={'Job'} no={'15'} />
-        <Scroll name={'Gujrat'} no={'15'} />
-      </ScrollView>
+          <Scroll name={'Andhra Pradesh'} no={'15'} />
+          <Scroll name={'Pune'} no={'15'} />
+          <Scroll name={'Job'} no={'15'} />
+          <Scroll name={'Gujrat'} no={'15'} />
+        </ScrollView>
+      </View>
     </View>
   );
 }
@@ -139,9 +147,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   scroll: {
-    marginTop: 20,
+    // marginTop: 20,
     borderWidth: 1,
-    height: 300,
+    height: 400,
   },
   text: {
     fontWeight: 'bold',

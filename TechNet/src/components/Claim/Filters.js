@@ -26,7 +26,7 @@ export default function Filters(props) {
             flex: 0.75,
             justifyContent: 'center',
           }}>
-          <Text style={{alignItems: 'center', padding: 5, fontSize: 15}}>
+          <Text style={{alignItems: 'center', padding: 5, fontSize: 14}}>
             {item}
           </Text>
         </TouchableOpacity>
