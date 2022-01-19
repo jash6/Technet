@@ -23,7 +23,7 @@ export default function Retailer() {
         <View style={{marginLeft: 15, flexDirection: 'row'}}>
           <View style={{flex: 1}}>
             <Filters
-              placeholder={'Activation Schema'}
+              placeholder={'Activation Scheme'}
               array={['Large', 'SME', 'Government']}
               width={170}
             />

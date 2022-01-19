@@ -40,13 +40,28 @@ export default function Scroll(props) {
           </View>
           <View style={styles.common}>
             <View style={styles.trow1}>
-              <View style={{flex: 1.2, borderRightWidth: 1}}>
+              <View
+                style={{
+                  flex: 2,
+                  borderRightWidth: 1,
+                  justifyContent: 'center',
+                }}>
                 <Text style={styles.ttext}>Name</Text>
               </View>
-              <View style={{flex: 1, borderRightWidth: 1}}>
+              <View
+                style={{
+                  flex: 2,
+                  borderRightWidth: 1,
+                  justifyContent: 'center',
+                }}>
                 <Text style={styles.ttext}>Amount</Text>
               </View>
-              <View style={{flex: 0.8, borderRightWidth: 1}}>
+              <View
+                style={{
+                  flex: 1.2,
+                  borderRightWidth: 1,
+                  justifyContent: 'center',
+                }}>
                 <Text style={styles.ttext}>Status</Text>
               </View>
               <View style={{flex: 1, borderRightWidth: 0}}>
@@ -55,13 +70,28 @@ export default function Scroll(props) {
             </View>
             {companies.map(x => (
               <View style={[styles.align, {borderWidth: 1, borderTopWidth: 0}]}>
-                <View style={{flex: 1.2, borderRightWidth: 1}}>
+                <View
+                  style={{
+                    flex: 2,
+                    borderRightWidth: 1,
+                    justifyContent: 'center',
+                  }}>
                   <Text style={styles.ttext1}>{x.Name}</Text>
                 </View>
-                <View style={{flex: 1, borderRightWidth: 1}}>
+                <View
+                  style={{
+                    flex: 2,
+                    borderRightWidth: 1,
+                    justifyContent: 'center',
+                  }}>
                   <Text style={styles.ttext1}>{x.Amount}</Text>
                 </View>
-                <View style={{flex: 0.8, borderRightWidth: 1}}>
+                <View
+                  style={{
+                    flex: 1.2,
+                    borderRightWidth: 1,
+                    justifyContent: 'center',
+                  }}>
                   <Text
                     style={[
                       styles.ttext1,
@@ -73,7 +103,12 @@ export default function Scroll(props) {
                     {x.Status}
                   </Text>
                 </View>
-                <View style={{flex: 1, borderRightWidth: 0}}>
+                <View
+                  style={{
+                    flex: 1,
+                    borderRightWidth: 0,
+                    justifyContent: 'center',
+                  }}>
                   <TouchableOpacity
                     onPress={() => {
                       setClickedeye(true);
@@ -82,7 +117,7 @@ export default function Scroll(props) {
                     <MaterialIcons
                       name="remove-red-eye"
                       style={{color: 'black'}}
-                      size={30}
+                      size={25}
                     />
                   </TouchableOpacity>
                 </View>
@@ -192,7 +227,7 @@ const styles = StyleSheet.create({
   trow1: {
     flexDirection: 'row',
     backgroundColor: '#e5e5e5',
-    height: 40,
+    height: 45,
     borderWidth: 1,
   },
   ttext: {
@@ -200,9 +235,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'black',
     textAlign: 'center',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 5,
   },
   ttext1: {
     textAlign: 'center',

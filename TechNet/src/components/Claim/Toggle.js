@@ -14,14 +14,32 @@ export default function Toggle() {
             onPress={() => {
               Setmetrics([true, false]);
             }}>
-            <Text style={styles.text}>Reseller (AWP)</Text>
+            <Text style={styles.text}>Total</Text>
+            <Text style={styles.text2}>51/80</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={metrics[1] ? styles.click : styles.nclicked}
             onPress={() => {
               Setmetrics([false, true]);
             }}>
-            <Text style={styles.text}>Retailer</Text>
+            <Text style={styles.text}>Channel</Text>
+            <Text style={styles.text2}>12/20</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={{flex: 1, justifyContent: 'flex-start'}}>
+            <Text style={styles.text}>LFR</Text>
+            <Text style={styles.text2}>3/5</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={{flex: 1, justifyContent: 'flex-start'}}>
+            <Text style={styles.text}>Online</Text>
+            <Text style={styles.text2}>12/20</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={{flex: 1, justifyContent: 'flex-start'}}>
+            <Text style={styles.text}>Eshops</Text>
+            <Text style={styles.text2}>2/5</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={{flex: 1, justifyContent: 'flex-start'}}>
+            <Text style={styles.text}>Dishti</Text>
+            <Text style={styles.text2}>22/30</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -45,17 +63,23 @@ const styles = StyleSheet.create({
     borderBottomColor: '#0076ff',
     borderBottomWidth: 4.5,
     borderRadius: 5,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     height: 50,
   },
   nclicked: {
     flex: 1,
     height: 50,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
   text: {
     textAlign: 'center',
     fontWeight: '600',
-    fontSize: 16,
+    fontSize: 14,
+  },
+  text2: {
+    textAlign: 'center',
+    fontSize: 12,
+    marginTop: 10,
+    color: 'grey',
   },
 });
