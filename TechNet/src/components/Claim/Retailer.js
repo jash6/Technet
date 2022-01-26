@@ -143,11 +143,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#fff',
     backgroundColor: 'white',
+    height: '59%',
   },
   scroll: {
     // marginTop: 20,
     borderWidth: 1,
-    height: 320,
   },
   text: {
     fontWeight: 'bold',
