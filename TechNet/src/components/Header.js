@@ -2,13 +2,22 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {Icon} from 'react-native-elements';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 export default function Header(props) {
   return (
     <View style={styles.container}>
       <View style={styles.text_container}>
         {props.name === 'Technet Informa...' ? (
           <Text style={styles.text}>Hi</Text>
+        ) : props.name === 'Target V/S Achievement' ? (
+          <TouchableOpacity onPress={props.navigation.goBack}>
+            <MaterialIcons
+              name="keyboard-arrow-left"
+              style={styles.icon2}
+              size={25}
+            />
+          </TouchableOpacity>
         ) : (
           <></>
         )}

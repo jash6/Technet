@@ -4,7 +4,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import Header from '../Header';
 import Scroll from './Scroll';
 
-export default function Target() {
+export default function Target({navigation}) {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
   const [items, setItems] = useState([
@@ -15,7 +15,7 @@ export default function Target() {
   ]);
   return (
     <View>
-      <Header name={'Target V/S Achievement'} />
+      <Header name={'Target V/S Achievement'} navigation={navigation} />
       <DropDownPicker
         open={open}
         value={value}

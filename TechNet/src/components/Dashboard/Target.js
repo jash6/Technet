@@ -44,7 +44,7 @@ export default function Target({navigation}) {
         </View>
         <TouchableOpacity
           style={styles.text3}
-          onPress={() => navigation.navigate('Target', {})}>
+          onPress={() => navigation.navigate('Target')}>
           <Text
             style={{
               color: '#70b4ff',
