@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import {View, Text, StyleSheet, ScrollView} from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 import Header from '../components/Header';
-import Scroll from '../components/Claim/Scroll';
+import Scroll from '../components/Target/Scroll';
+
 export default function More() {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
@@ -31,10 +32,8 @@ export default function More() {
       />
       <View style={styles.back}>
         <ScrollView style={styles.scroll}>
-          <Scroll name={'Andhra Pradesh'} pc={'8'} exe={'32/60'} />
-          <Scroll name={'Pune'} pc={'9'} exe={'60/180'} />
-          <Scroll name={'Job'} pc={'12'} exe={'180/240'} />
-          <Scroll name={'Gujarat'} pc={'15'} exe={'180/240'} />
+          <Scroll name={'Andhra Pradesh'} no={'267/300'} />
+          <Scroll name={'Pune'} no={'267/300'} />
         </ScrollView>
       </View>
     </View>
@@ -86,6 +85,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     margin: 10,
     borderRadius: 3,
-    height: '72%',
+    height: '77%',
   },
 });
