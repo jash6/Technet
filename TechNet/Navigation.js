@@ -1,24 +1,33 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+
 import Dashboard from './screens/../src/screens/Dashboard';
 import Claim from './screens/../src/screens/Claim';
 import Demo from './screens/../src/screens/Demo';
 import Account from './screens/../src/screens/Account';
 import More from './screens/../src/screens/More';
-import Reseller from './src/components/Claim/Reseller';
-import Retailer from './src/components/Claim/Retailer';
+
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Target from './src/components/Target/Target';
 
 export default function RootNavigation() {
   const Tab = createBottomTabNavigator();
+  const Stack = createStackNavigator();
 
   const screenOptions = {
     headerShown: false,
   };
 
+  function StackScreen() {
+    return (
+      <Stack.Navigator initialRouteName="Section" screenOptions={screenOptions}>
+        <Stack.Screen name="Section" component={Dashboard} />
+        <Stack.Screen name="Target" component={Target} />
+      </Stack.Navigator>
+    );
+  }
   // const Tab = createMaterialTopTabNavigator();
 
   // function MyTabs() {
@@ -65,7 +74,7 @@ export default function RootNavigation() {
           activeTintColor: '#037aff',
           inactiveTintColor: '#555',
         }}>
-        <Tab.Screen name="Dashboard" component={Dashboard} />
+        <Tab.Screen name="Dashboard" component={StackScreen} />
         <Tab.Screen name="Demo" component={Demo} />
         <Tab.Screen name="Claim" component={Claim} />
         <Tab.Screen name="Account" component={Account} />

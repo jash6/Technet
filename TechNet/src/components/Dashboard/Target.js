@@ -10,7 +10,7 @@ import {
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Filters from '../Claim/Filters';
 
-export default function Target() {
+export default function Target({navigation}) {
   const [target, Settarget] = useState(120);
   const [current, Setcurrent] = useState(60);
   const [qtr, Setqtr] = useState('Select QTR');
@@ -42,7 +42,9 @@ export default function Target() {
           </View>
           <Text style={{fontSize: 16, marginTop: 7}}>{percent}%</Text>
         </View>
-        <TouchableOpacity style={styles.text3}>
+        <TouchableOpacity
+          style={styles.text3}
+          onPress={() => navigation.navigate('Target', {})}>
           <Text
             style={{
               color: '#70b4ff',

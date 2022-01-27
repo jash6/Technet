@@ -5,13 +5,13 @@ import Performance from '../components/Dashboard/Performance';
 import Activation from '../components/Dashboard/Activation';
 import Header from '../components/Header';
 
-export default function Dashboard() {
+export default function Dashboard({navigation}) {
   return (
     <ScrollView>
       {/* Header Section */}
       <Header name="Technet Informa..." />
       {/* Target vs Achievement */}
-      <Target />
+      <Target navigation={navigation} />
       {/* Activation Performance */}
       <Activation />
       {/* Performance Table */}
