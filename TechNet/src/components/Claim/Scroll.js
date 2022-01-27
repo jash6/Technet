@@ -68,8 +68,10 @@ export default function Scroll(props) {
                 <Text></Text>
               </View>
             </View>
-            {companies.map(x => (
-              <View style={[styles.align, {borderWidth: 1, borderTopWidth: 0}]}>
+            {companies.map((x, i) => (
+              <View
+                style={[styles.align, {borderWidth: 1, borderTopWidth: 0}]}
+                key={i}>
                 <View
                   style={{
                     flex: 2,

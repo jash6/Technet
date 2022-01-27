@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     margin: 10,
     borderRadius: 3,
-    height: '72%',
+    height: '68.5%',
   },
   drop: {
     width: 110,
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
   box: {
     width: 110,
     marginLeft: 10,
+    marginTop: 10,
   },
   item: {
     textAlign: 'center',
