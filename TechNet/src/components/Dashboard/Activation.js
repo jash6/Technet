@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, TouchableOpacity, Button, Platform} from 'react-native';
+import {View, Text, TouchableOpacity, Modal, ScrollView} from 'react-native';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
+import Popup from './Popup';
 export default function Activation() {
   const [model, SetModel] = useState([
     {Name: 'M515DA-EJ312TS', ST: '1', ACT: '22', N_ACT: '22'},
@@ -14,6 +14,12 @@ export default function Activation() {
   const [clicked, Setclicked] = useState(false);
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
 
+  const [selectedStartDate, SetselectedStartDate] = useState(null);
+  const [selectedEndDate, SetselectedEndDate] = useState(null);
+
+  const startDate = selectedStartDate ? selectedStartDate.toString() : '';
+  const endDate = selectedEndDate ? selectedEndDate.toString() : '';
+
   const showDatePicker = () => {
     setDatePickerVisibility(true);
   };
@@ -21,12 +27,6 @@ export default function Activation() {
   const hideDatePicker = () => {
     setDatePickerVisibility(false);
   };
-
-  const handleConfirm = date => {
-    console.warn('A date has been picked: ', date);
-    hideDatePicker();
-  };
-
   const filtered = [];
   for (let i = 0; i < 3; i++) {
     filtered.push(model[i]);
@@ -65,9 +65,17 @@ export default function Activation() {
                   borderRightWidth: 0,
                   flex: 0.7,
                 }}>
-                <Text style={{textAlign: 'center', fontSize: 16}}>
-                  Select Date
-                </Text>
+                {startDate === '' ? (
+                  <Text style={{textAlign: 'center', fontSize: 16}}>
+                    Select Date
+                  </Text>
+                ) : (
+                  <ScrollView style={{flexDirection: 'row'}}>
+                    <Text>
+                      {startDate.slice(4, 11)}-{endDate.slice(4, 11)}
+                    </Text>
+                  </ScrollView>
+                )}
               </View>
               <View
                 style={{
@@ -84,12 +92,21 @@ export default function Activation() {
               </View>
             </View>
           </TouchableOpacity>
-          <DateTimePickerModal
+          {/* <DateTimePickerModal
             isVisible={isDatePickerVisible}
             mode="date"
             onConfirm={handleConfirm}
             onCancel={hideDatePicker}
-          />
+          /> */}
+          <Modal transparent={true} visible={isDatePickerVisible}>
+            <Popup
+              onClose={() => setDatePickerVisibility(false)}
+              selectedStartDate={selectedStartDate}
+              SetselectedStartDate={SetselectedStartDate}
+              selectedEndDate={selectedEndDate}
+              SetselectedEndDate={SetselectedEndDate}
+            />
+          </Modal>
         </View>
       </View>
       <View

@@ -13,20 +13,26 @@ export default function Section2() {
   ]);
   return (
     <View>
-      <DropDownPicker
-        open={open}
-        value={value}
-        items={items}
-        setOpen={setOpen}
-        setValue={setValue}
-        setItems={setItems}
-        placeholder="Select QTR"
-        style={styles.drop}
-        dropDownContainerStyle={styles.box}
-        listItemLabelStyle={styles.item}
-        closeOnBackPressed={true}
-        showTickIcon={false}
-      />
+      <View
+        style={{
+          flexDirection: 'row',
+          width: '100%',
+        }}>
+        <DropDownPicker
+          open={open}
+          value={value}
+          items={items}
+          setOpen={setOpen}
+          setValue={setValue}
+          setItems={setItems}
+          placeholder="Select QTR"
+          style={styles.drop}
+          dropDownContainerStyle={styles.box}
+          listItemLabelStyle={styles.item}
+          closeOnBackPressed={true}
+          showTickIcon={false}
+        />
+      </View>
       <View style={styles.container}>
         <View style={{flexDirection: 'row'}}>
           <TouchableOpacity
@@ -177,18 +183,14 @@ const styles = StyleSheet.create({
     margin: 6,
   },
   drop: {
-    width: 130,
+    width: '35%',
     height: 30,
     borderRadius: 3,
-    marginLeft: '65%',
-    zIndex: 1,
+    marginLeft: '60%',
   },
   box: {
-    // width: 10,
-    height: 155,
-    width: 115,
-    marginLeft: '65%',
-    zIndex: 1,
+    width: '10%',
+    marginLeft: '60%',
   },
   item: {
     textAlign: 'center',

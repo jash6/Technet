@@ -17,22 +17,26 @@ export default function Section3() {
   return (
     <View>
       <View style={styles.back}>
-        <DropDownPicker
-          open={open}
-          value={value}
-          items={items}
-          setOpen={setOpen}
-          setValue={setValue}
-          setItems={setItems}
-          placeholder="AES"
-          style={styles.drop}
-          dropDownContainerStyle={styles.box}
-          listItemLabelStyle={styles.item}
-          closeOnBackPressed={true}
-          showTickIcon={false}
-        />
-        <View>
-          <Text style={styles.text}>Compulsory: 20</Text>
+        <View style={{flexDirection: 'row'}}>
+          <View>
+            <DropDownPicker
+              open={open}
+              value={value}
+              items={items}
+              setOpen={setOpen}
+              setValue={setValue}
+              setItems={setItems}
+              placeholder="AES"
+              style={styles.drop}
+              dropDownContainerStyle={styles.box}
+              listItemLabelStyle={styles.item}
+              closeOnBackPressed={true}
+              showTickIcon={false}
+            />
+          </View>
+          <View>
+            <Text style={styles.text}>Compulsory: 20</Text>
+          </View>
         </View>
         <View style={styles.container}>
           <View style={{flex: 1}}>
@@ -84,8 +88,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   text: {
-    // marginTop: 20,
-    marginLeft: '58%',
+    marginTop: 15,
+    marginLeft: 95,
     color: 'grey',
     fontWeight: 'bold',
   },

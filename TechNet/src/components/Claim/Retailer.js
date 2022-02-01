@@ -11,26 +11,60 @@ import {
 import Scroll from './Scroll';
 import Filters from './Filters';
 import Circle from './Circle';
-
+import DropDownPicker from 'react-native-dropdown-picker';
 export default function Retailer() {
   const [clickeditem, setClickedItem] = useState(false);
+
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState(null);
+  const [open1, setOpen1] = useState(false);
+  const [value1, setValue1] = useState(null);
+  const [items, setItems] = useState([
+    {label: '1', value: '1'},
+    {label: '2', value: '2'},
+    {label: '3', value: '3'},
+    {label: '4', value: '4'},
+  ]);
+  const [items1, setItems1] = useState([
+    {label: 'Large', value: 'Large'},
+    {label: 'SME', value: 'SME'},
+    {label: 'Government', value: 'Government'},
+  ]);
 
   return (
     <View>
       <View style={{marginBottom: 20}}>
-        <View style={{marginLeft: 15, flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row'}}>
           <View style={{flex: 1}}>
-            <Filters
-              placeholder={'Activation Scheme'}
-              array={['Large', 'SME', 'Government']}
-              width={170}
+            <DropDownPicker
+              open={open1}
+              value={value1}
+              items={items1}
+              setOpen={setOpen1}
+              setValue={setValue1}
+              setItems={setItems1}
+              placeholder="Activation Scheme"
+              style={styles.drop1}
+              dropDownContainerStyle={styles.box1}
+              listItemLabelStyle={styles.item}
+              closeOnBackPressed={true}
+              showTickIcon={false}
             />
           </View>
-          <View style={{flex: 1, marginLeft: 20}}>
-            <Filters
-              placeholder={'Set QTR'}
-              array={['1', '2', '3', '4']}
-              width={170}
+          <View style={{flex: 1}}>
+            <DropDownPicker
+              open={open}
+              value={value}
+              items={items}
+              setOpen={setOpen}
+              setValue={setValue}
+              setItems={setItems}
+              placeholder="Select QTR"
+              style={styles.drop2}
+              dropDownContainerStyle={styles.box2}
+              listItemLabelStyle={styles.item}
+              closeOnBackPressed={true}
+              showTickIcon={false}
             />
           </View>
         </View>
@@ -114,29 +148,6 @@ export default function Retailer() {
 }
 
 const styles = StyleSheet.create({
-  row1: {
-    backgroundColor: 'white',
-    width: 150,
-    height: 35,
-    marginTop: '10%',
-    marginLeft: '10%',
-    borderRadius: 4,
-  },
-  row2: {
-    backgroundColor: 'white',
-    height: 35,
-    marginTop: '5%',
-    marginLeft: '5%',
-    width: 335,
-    borderRadius: 4,
-  },
-  container: {
-    flexDirection: 'row',
-    marginLeft: 10,
-  },
-  placeholder: {
-    fontWeight: '600',
-  },
   box: {
     margin: 10,
     borderRadius: 5,
@@ -163,12 +174,32 @@ const styles = StyleSheet.create({
     marginBottom: 7,
     fontSize: 15,
   },
-  input: {
-    height: 40,
-    width: 130,
-    margin: 12,
-    borderWidth: 1,
+
+  drop1: {
+    width: '90%',
+    marginLeft: 15,
+    height: 30,
     borderRadius: 3,
-    padding: 10,
+    marginTop: '2%',
+  },
+  box1: {
+    width: '90%',
+    marginTop: 4,
+    marginLeft: 15,
+  },
+  drop2: {
+    width: '70%',
+    marginLeft: 40,
+    height: 30,
+    borderRadius: 3,
+    marginTop: '2%',
+  },
+  box2: {
+    width: '70%',
+    marginTop: 4,
+    marginLeft: 40,
+  },
+  item: {
+    textAlign: 'center',
   },
 });

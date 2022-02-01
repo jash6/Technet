@@ -8,6 +8,7 @@ import {
   Modal,
 } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import DropDownPicker from 'react-native-dropdown-picker';
 import Filters from '../Claim/Filters';
 
 export default function Target({navigation}) {
@@ -15,19 +16,43 @@ export default function Target({navigation}) {
   const [current, Setcurrent] = useState(60);
   const [qtr, Setqtr] = useState('Select QTR');
   const [modalVisible, setModalVisible] = useState(false);
+
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState(null);
+  const [items, setItems] = useState([
+    {label: '1', value: '1'},
+    {label: '2', value: '2'},
+    {label: '3', value: '3'},
+    {label: '4', value: '4'},
+  ]);
+
   const list = ['1', '2', '3', '4'];
   const percent = (current / target) * 100;
   return (
     <View>
       <View style={{flexDirection: 'row'}}>
-        <View style={{flex: 2}}>
+        <View>
           <Text style={styles.text}>Target v/s Achievement</Text>
         </View>
 
-        <Filters
+        {/* <Filters
           placeholder={'Set QTR'}
           array={['1', '2', '3', '4']}
           width={140}
+        /> */}
+        <DropDownPicker
+          open={open}
+          value={value}
+          items={items}
+          setOpen={setOpen}
+          setValue={setValue}
+          setItems={setItems}
+          placeholder="Select QTR"
+          style={styles.drop}
+          dropDownContainerStyle={styles.box1}
+          listItemLabelStyle={styles.item}
+          closeOnBackPressed={true}
+          showTickIcon={false}
         />
       </View>
       <View style={styles.box}>
@@ -112,5 +137,22 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderWidth: 1,
     borderColor: '#7fe1ad',
+  },
+
+  drop: {
+    width: '31%',
+    height: 30,
+    borderRadius: 3,
+    marginLeft: '18%',
+    marginTop: '2%',
+  },
+  box1: {
+    // width: 10,
+    width: '6%',
+    marginTop: 6,
+    marginLeft: '18%',
+  },
+  item: {
+    textAlign: 'center',
   },
 });

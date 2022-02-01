@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+// import {TouchableOpacity} from 'react-native-gesture-handler';
 export default function Header(props) {
   return (
     <View style={styles.container}>
@@ -49,14 +49,14 @@ export default function Header(props) {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    height: 90,
+    height: '10%',
     backgroundColor: '#00539b',
   },
   text_container: {
     flexDirection: 'row',
   },
   text: {
-    marginTop: 55,
+    marginTop: '9%',
     marginLeft: 20,
     marginBottom: 5,
     fontSize: 25,
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   text2: {
-    marginTop: 55,
+    marginTop: '9%',
     marginBottom: 5,
     marginLeft: 10,
     fontSize: 25,
@@ -73,13 +73,13 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   icon: {
-    marginTop: 57,
+    marginTop: 40,
     marginBottom: 5,
     marginLeft: 30,
     color: 'white',
   },
   icon2: {
-    marginTop: 57,
+    marginTop: 40,
     marginBottom: 5,
     marginLeft: 20,
     color: 'white',
