@@ -1,50 +1,36 @@
 import {View, Text, Dimensions, StyleSheet} from 'react-native';
-import React, {useState} from 'react';
-
-import Map from '../components/Map';
-import Map2 from '../components/Map2';
+import React from 'react';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MapView from 'react-native-maps';
 import {Marker} from 'react-native-maps';
-
-export default function More() {
-  const [latdelta, Setlatdelta] = useState(25);
-  const [londelta, Setlondelta] = useState(25);
-  const [lat, Setlat] = useState(20.5937);
-  const [lon, Setlon] = useState(78.9629);
+export default function Map2(props) {
   const dimensions = Dimensions.get('window');
-  const customData = require('../../assets/data/Data_Total_Final.json');
+  const customData = require('../../assets/data/Data_Final.json');
   const Logo = require('../../assets/images/shop.jpeg');
   return (
     <View style={styles.container1}>
+      {console.log(props)}
       <MapView
         style={{width: '100%', height: '100%'}}
         initialRegion={{
-          latitude: lat,
-          longitude: lon,
-          // latitudeDelta: 0.0922,
-          // longitudeDelta: 0.0421,
-          latitudeDelta: latdelta,
-          longitudeDelta: londelta,
+          latitude: 20.5937,
+          longitude: 78.9629,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
         }}>
         {customData.map(x => (
           <Marker
-            title={x.Counts.toString()}
-            description={`District: ${x.District} Count: ${x.Counts}`}
+            title={x.Total}
             coordinate={{
               latitude: x.lat,
               longitude: x.lon,
             }}
-            key={x.District}>
-            {x.Counts > 10 ? (
-              <Entypo name="shop" size={20} color="blue" />
-            ) : (
-              <Entypo name="shop" size={7} color="blue" />
-            )}
+            key={x.State}
+            onPress={e => console.log(e.nativeEvent)}>
+            <Entypo name="shop" size={20} color="blue" />
           </Marker>
         ))}
       </MapView>
-      {/* <Map dimensions={dimensions} /> */}
     </View>
   );
 }

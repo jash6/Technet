@@ -1,0 +1,1160 @@
+[
+  {
+    "District": "AGRA",
+    "Counts": 2,
+    "lat": 27.1752554,
+    "lon": 78.0098161
+  },
+  {
+    "District": "AHMEDABAD",
+    "Counts": 7,
+    "lat": 23.0216238,
+    "lon": 72.5797068
+  },
+  {
+    "District": "AHMEDNAGAR",
+    "Counts": 4,
+    "lat": 19.1627725,
+    "lon": 74.8580243
+  },
+  {
+    "District": "AJMER",
+    "Counts": 1,
+    "lat": 26.4691,
+    "lon": 74.639
+  },
+  {
+    "District": "AKOLA",
+    "Counts": 1,
+    "lat": 20.7618624,
+    "lon": 77.1921716
+  },
+  {
+    "District": "ALIGARH",
+    "Counts": 3,
+    "lat": 27.8769897,
+    "lon": 78.1372903
+  },
+  {
+    "District": "ALLAHABAD",
+    "Counts": 3,
+    "lat": 25.4381302,
+    "lon": 81.8338005
+  },
+  {
+    "District": "ALWAR",
+    "Counts": 1,
+    "lat": 27.639077,
+    "lon": 76.6144525
+  },
+  {
+    "District": "AMBALA",
+    "Counts": 1,
+    "lat": 30.3843674,
+    "lon": 76.770421
+  },
+  {
+    "District": "AMRAVATI",
+    "Counts": 5,
+    "lat": 21.1545412,
+    "lon": 77.6442962
+  },
+  {
+    "District": "AMRITSAR",
+    "Counts": 9,
+    "lat": 31.6343083,
+    "lon": 74.8736788
+  },
+  {
+    "District": "ANAND",
+    "Counts": 1,
+    "lat": 22.5584995,
+    "lon": 72.9625629
+  },
+  {
+    "District": "ANANTAPUR",
+    "Counts": 1,
+    "lat": 14.6546235,
+    "lon": 77.5562598
+  },
+  {
+    "District": "AURANGABAD",
+    "Counts": 5,
+    "lat": 19.877263,
+    "lon": 75.3390241
+  },
+  {
+    "District": "BALANGIR",
+    "Counts": 1,
+    "lat": 20.7502257,
+    "lon": 83.2499464
+  },
+  {
+    "District": "BALESHWAR",
+    "Counts": 1,
+    "lat": 21.5,
+    "lon": 86.75
+  },
+  {
+    "District": "BANGALORE",
+    "Counts": 14,
+    "lat": 12.9767936,
+    "lon": 77.590082
+  },
+  {
+    "District": "BANKURA",
+    "Counts": 1,
+    "lat": 23.1319542,
+    "lon": 87.2073972
+  },
+  {
+    "District": "BARAMULA",
+    "Counts": 1,
+    "lat": 34.566667,
+    "lon": 74.75
+  },
+  {
+    "District": "BARDDHAMAN",
+    "Counts": 5,
+    "lat": 23.25,
+    "lon": 87.75
+  },
+  {
+    "District": "BAREILLY",
+    "Counts": 2,
+    "lat": 28.457876,
+    "lon": 79.4055709
+  },
+  {
+    "District": "BARNALA",
+    "Counts": 1,
+    "lat": 30.3704685,
+    "lon": 75.5040174
+  },
+  {
+    "District": "BATHINDA",
+    "Counts": 4,
+    "lat": 30.1791154,
+    "lon": 75.0471016
+  },
+  {
+    "District": "BEGUSARAI",
+    "Counts": 1,
+    "lat": 25.5127194,
+    "lon": 86.0905711
+  },
+  {
+    "District": "BELGAUM",
+    "Counts": 2,
+    "lat": 15.8572666,
+    "lon": 74.5069343
+  },
+  {
+    "District": "BELLARY",
+    "Counts": 1,
+    "lat": 15.1433952,
+    "lon": 76.9193876
+  },
+  {
+    "District": "BHILWARA",
+    "Counts": 3,
+    "lat": 25.4887735,
+    "lon": 74.6996128
+  },
+  {
+    "District": "BHOPAL",
+    "Counts": 8,
+    "lat": 23.2584857,
+    "lon": 77.401989
+  },
+  {
+    "District": "BIKANER",
+    "Counts": 2,
+    "lat": 28.0159286,
+    "lon": 73.3171367
+  },
+  {
+    "District": "BILASPUR - CHHATTISGARH",
+    "Counts": 1,
+    "lat": 21.9893403,
+    "lon": 82.109965
+  },
+  {
+    "District": "BOKARO",
+    "Counts": 1,
+    "lat": 23.6991279,
+    "lon": 85.9910689
+  },
+  {
+    "District": "BONGAIGAON",
+    "Counts": 1,
+    "lat": 26.4800126,
+    "lon": 90.5580387
+  },
+  {
+    "District": "CACHAR",
+    "Counts": 1,
+    "lat": 24.75864,
+    "lon": 92.8816648
+  },
+  {
+    "District": "CENTRAL DELHI",
+    "Counts": 1,
+    "lat": 28.6985483,
+    "lon": 77.2193914
+  },
+  {
+    "District": "CHANDIGARH",
+    "Counts": 8,
+    "lat": 30.7334421,
+    "lon": 76.7797143
+  },
+  {
+    "District": "CHANDRAPUR",
+    "Counts": 1,
+    "lat": 20.0309756,
+    "lon": 79.3581387
+  },
+  {
+    "District": "CHENNAI",
+    "Counts": 14,
+    "lat": 13.0836939,
+    "lon": 80.270186
+  },
+  {
+    "District": "CHITTOOR",
+    "Counts": 1,
+    "lat": 13.1601048,
+    "lon": 79.1555506
+  },
+  {
+    "District": "COIMBATORE",
+    "Counts": 7,
+    "lat": 11.0018115,
+    "lon": 76.9628425
+  },
+  {
+    "District": "CUTTACK",
+    "Counts": 3,
+    "lat": 20.4686,
+    "lon": 85.8792
+  },
+  {
+    "District": "DAKSHIN KANNADA",
+    "Counts": 3,
+    "lat": 12.8827367,
+    "lon": 75.0309089
+  },
+  {
+    "District": "DARJEELING",
+    "Counts": 4,
+    "lat": 27.0377554,
+    "lon": 88.263176
+  },
+  {
+    "District": "DEHRADUN",
+    "Counts": 9,
+    "lat": 30.3255646,
+    "lon": 78.0436813
+  },
+  {
+    "District": "DHANBAD",
+    "Counts": 3,
+    "lat": 23.7952809,
+    "lon": 86.4309638
+  },
+  {
+    "District": "DHARMAPURI",
+    "Counts": 1,
+    "lat": 12.0968048,
+    "lon": 78.193043
+  },
+  {
+    "District": "DHARWAD (HUBLI)",
+    "Counts": 4,
+    "lat": 15.3518378,
+    "lon": 75.1379848
+  },
+  {
+    "District": "DHULE",
+    "Counts": 2,
+    "lat": 21.1305015,
+    "lon": 74.4789118
+  },
+  {
+    "District": "DIBRUGARH",
+    "Counts": 3,
+    "lat": 27.4844597,
+    "lon": 94.9019447
+  },
+  {
+    "District": "DIMAPUR",
+    "Counts": 3,
+    "lat": 25.9136459,
+    "lon": 93.7283456
+  },
+  {
+    "District": "EAST DELHI",
+    "Counts": 1,
+    "lat": 28.6197638,
+    "lon": 77.3095502
+  },
+  {
+    "District": "EAST GODAVARI",
+    "Counts": 3,
+    "lat": 17.233496,
+    "lon": 81.7225986
+  },
+  {
+    "District": "EAST KHASI HILLS",
+    "Counts": 3,
+    "lat": 25.4056809,
+    "lon": 91.8354677
+  },
+  {
+    "District": "EAST MEDINIPUR",
+    "Counts": 1,
+    "lat": 22.4207025,
+    "lon": 87.3269963
+  },
+  {
+    "District": "EAST NIMAR",
+    "Counts": 2,
+    "lat": 21.75,
+    "lon": 76.583333
+  },
+  {
+    "District": "EAST SINGHBHUM",
+    "Counts": 3,
+    "lat": 22.5,
+    "lon": 85.5
+  },
+  {
+    "District": "ERNAKULAM",
+    "Counts": 10,
+    "lat": 9.98408,
+    "lon": 76.2741457
+  },
+  {
+    "District": "ERODE",
+    "Counts": 1,
+    "lat": 11.3692044,
+    "lon": 77.6766269
+  },
+  {
+    "District": "FARIDABAD",
+    "Counts": 2,
+    "lat": 28.4031478,
+    "lon": 77.3105561
+  },
+  {
+    "District": "FIROZPUR",
+    "Counts": 1,
+    "lat": 30.8851004,
+    "lon": 74.6601408
+  },
+  {
+    "District": "GANDHINAGAR",
+    "Counts": 1,
+    "lat": 23.2232877,
+    "lon": 72.6492267
+  },
+  {
+    "District": "GANGANAGAR",
+    "Counts": 1,
+    "lat": 23.7497214,
+    "lon": 91.876635
+  },
+  {
+    "District": "GARHWA",
+    "Counts": 2,
+    "lat": 24.1552904,
+    "lon": 83.8252258
+  },
+  {
+    "District": "GAYA",
+    "Counts": 2,
+    "lat": 24.7964355,
+    "lon": 85.0079563
+  },
+  {
+    "District": "GHAZIABAD",
+    "Counts": 10,
+    "lat": 28.7218316,
+    "lon": 77.452685
+  },
+  {
+    "District": "GOA",
+    "Counts": 3,
+    "lat": 15.3004543,
+    "lon": 74.0855134
+  },
+  {
+    "District": "GORAKHPUR",
+    "Counts": 3,
+    "lat": 26.6711433,
+    "lon": 83.3645724
+  },
+  {
+    "District": "GULBARGA",
+    "Counts": 1,
+    "lat": 17.166667,
+    "lon": 77.083333
+  },
+  {
+    "District": "GUNTUR",
+    "Counts": 1,
+    "lat": 16.2915189,
+    "lon": 80.4541588
+  },
+  {
+    "District": "GURDASPUR",
+    "Counts": 1,
+    "lat": 32.166667,
+    "lon": 75.316667
+  },
+  {
+    "District": "GURGAON",
+    "Counts": 5,
+    "lat": 28.4282624,
+    "lon": 77.0027001
+  },
+  {
+    "District": "GWALIOR",
+    "Counts": 4,
+    "lat": 26.2037247,
+    "lon": 78.1573628
+  },
+  {
+    "District": "HAMIRPUR",
+    "Counts": 1,
+    "lat": 25.75,
+    "lon": 80
+  },
+  {
+    "District": "HAZARIBAGH",
+    "Counts": 1,
+    "lat": 23.9675151,
+    "lon": 85.4388457
+  },
+  {
+    "District": "HISAR",
+    "Counts": 2,
+    "lat": 29.168807,
+    "lon": 75.7461103
+  },
+  {
+    "District": "HOWRAH",
+    "Counts": 22,
+    "lat": 22.5736296,
+    "lon": 88.3251045
+  },
+  {
+    "District": "HUGLI",
+    "Counts": 1,
+    "lat": 22.9108917,
+    "lon": 88.0106339
+  },
+  {
+    "District": "HYDERABAD",
+    "Counts": 9,
+    "lat": 17.360589,
+    "lon": 78.4740613
+  },
+  {
+    "District": "IMPHAL",
+    "Counts": 2,
+    "lat": 24.7991162,
+    "lon": 93.9364419
+  },
+  {
+    "District": "INDORE",
+    "Counts": 9,
+    "lat": 22.7203616,
+    "lon": 75.8681996
+  },
+  {
+    "District": "JABALPUR",
+    "Counts": 5,
+    "lat": 23.1608938,
+    "lon": 79.9497702
+  },
+  {
+    "District": "JAIPUR",
+    "Counts": 12,
+    "lat": 26.9154576,
+    "lon": 75.8189817
+  },
+  {
+    "District": "JALANDHAR",
+    "Counts": 2,
+    "lat": 31.2920107,
+    "lon": 75.5680577
+  },
+  {
+    "District": "JALGAON",
+    "Counts": 2,
+    "lat": 20.8435118,
+    "lon": 75.5259266
+  },
+  {
+    "District": "JALPAIGURI",
+    "Counts": 1,
+    "lat": 26.4733048,
+    "lon": 88.6788669
+  },
+  {
+    "District": "JAMMU",
+    "Counts": 7,
+    "lat": 32.7185614,
+    "lon": 74.8580917
+  },
+  {
+    "District": "JAMNAGAR",
+    "Counts": 1,
+    "lat": 22.4732415,
+    "lon": 70.0552102
+  },
+  {
+    "District": "JODHPUR",
+    "Counts": 3,
+    "lat": 26.2967719,
+    "lon": 73.0351433
+  },
+  {
+    "District": "JORHAT",
+    "Counts": 2,
+    "lat": 26.7577925,
+    "lon": 94.2079645
+  },
+  {
+    "District": "KAMRUP",
+    "Counts": 15,
+    "lat": 26.1275551,
+    "lon": 91.2998715
+  },
+  {
+    "District": "KANCHEEPURAM",
+    "Counts": 1,
+    "lat": 12.8796051,
+    "lon": 79.7042762
+  },
+  {
+    "District": "KANGRA",
+    "Counts": 2,
+    "lat": 32.068547,
+    "lon": 76.2433679
+  },
+  {
+    "District": "KANNUR",
+    "Counts": 2,
+    "lat": 11.8763391,
+    "lon": 75.3737987
+  },
+  {
+    "District": "KANPUR NAGAR",
+    "Counts": 4,
+    "lat": 26.4402119,
+    "lon": 80.2693051
+  },
+  {
+    "District": "KARIMNAGAR",
+    "Counts": 1,
+    "lat": 18.4346438,
+    "lon": 79.1322648
+  },
+  {
+    "District": "KARNAL",
+    "Counts": 2,
+    "lat": 29.6803266,
+    "lon": 76.9896254
+  },
+  {
+    "District": "KATNI",
+    "Counts": 1,
+    "lat": 23.8339621,
+    "lon": 80.392456
+  },
+  {
+    "District": "KHAMMAM",
+    "Counts": 1,
+    "lat": 17.5,
+    "lon": 80.333333
+  },
+  {
+    "District": "KHORDHA",
+    "Counts": 14,
+    "lat": 20.2256472,
+    "lon": 85.5605947
+  },
+  {
+    "District": "KOLHAPUR",
+    "Counts": 3,
+    "lat": 16.7028412,
+    "lon": 74.2405329
+  },
+  {
+    "District": "KOLKATA",
+    "Counts": 2,
+    "lat": 22.5414185,
+    "lon": 88.3576912
+  },
+  {
+    "District": "KOLLAM",
+    "Counts": 1,
+    "lat": 8.8879509,
+    "lon": 76.5955013
+  },
+  {
+    "District": "KORBA",
+    "Counts": 1,
+    "lat": 36.5728899,
+    "lon": 10.8576024
+  },
+  {
+    "District": "KOTA",
+    "Counts": 7,
+    "lat": 25.1968256,
+    "lon": 76.0008933
+  },
+  {
+    "District": "KOTTAYAM",
+    "Counts": 1,
+    "lat": 9.6287383,
+    "lon": 76.6455326
+  },
+  {
+    "District": "KOZHIKODE",
+    "Counts": 4,
+    "lat": 11.2450558,
+    "lon": 75.7754716
+  },
+  {
+    "District": "KRISHNA",
+    "Counts": 5,
+    "lat": 16.6691525,
+    "lon": 80.7190024
+  },
+  {
+    "District": "KURNOOL",
+    "Counts": 2,
+    "lat": 15.8309251,
+    "lon": 78.0425373
+  },
+  {
+    "District": "KURUKSHETRA",
+    "Counts": 1,
+    "lat": 29.9693747,
+    "lon": 76.8482787
+  },
+  {
+    "District": "LUCKNOW",
+    "Counts": 12,
+    "lat": 26.8381,
+    "lon": 80.9346001
+  },
+  {
+    "District": "LUDHIANA",
+    "Counts": 15,
+    "lat": 30.9090157,
+    "lon": 75.851601
+  },
+  {
+    "District": "MADURAI",
+    "Counts": 5,
+    "lat": 9.9261153,
+    "lon": 78.1140983
+  },
+  {
+    "District": "MAHENDRAGARH",
+    "Counts": 1,
+    "lat": 28.25,
+    "lon": 76.166667
+  },
+  {
+    "District": "MAHESANA",
+    "Counts": 1,
+    "lat": 23.6015557,
+    "lon": 72.3867981
+  },
+  {
+    "District": "MALAPPURAM",
+    "Counts": 1,
+    "lat": 11.1068448,
+    "lon": 76.1099551
+  },
+  {
+    "District": "MANDI",
+    "Counts": 1,
+    "lat": 31.6723392,
+    "lon": 76.9533169
+  },
+  {
+    "District": "MEERUT",
+    "Counts": 2,
+    "lat": 29.0006525,
+    "lon": 77.7682288
+  },
+  {
+    "District": "MOGA",
+    "Counts": 2,
+    "lat": 30.7839866,
+    "lon": 75.1605742
+  },
+  {
+    "District": "MUMBAI",
+    "Counts": 8,
+    "lat": 19.0759899,
+    "lon": 72.8773928
+  },
+  {
+    "District": "MURSHIDABAD",
+    "Counts": 2,
+    "lat": 24.1745993,
+    "lon": 88.2721335
+  },
+  {
+    "District": "MUZAFFARNAGAR",
+    "Counts": 1,
+    "lat": 29.4480063,
+    "lon": 77.740685
+  },
+  {
+    "District": "MYSORE",
+    "Counts": 2,
+    "lat": 12.3051828,
+    "lon": 76.6553609
+  },
+  {
+    "District": "NAGAPATTINAM",
+    "Counts": 2,
+    "lat": 10.8056276,
+    "lon": 79.8246598
+  },
+  {
+    "District": "NAGPUR",
+    "Counts": 14,
+    "lat": 21.1498134,
+    "lon": 79.0820556
+  },
+  {
+    "District": "NAINITAL",
+    "Counts": 1,
+    "lat": 29.2947829,
+    "lon": 79.4154809
+  },
+  {
+    "District": "NALANDA",
+    "Counts": 3,
+    "lat": 25.1364914,
+    "lon": 85.4436546
+  },
+  {
+    "District": "NALGONDA",
+    "Counts": 1,
+    "lat": 16.8579636,
+    "lon": 79.2174935
+  },
+  {
+    "District": "NANDED",
+    "Counts": 1,
+    "lat": 19.0940088,
+    "lon": 77.4831922
+  },
+  {
+    "District": "NARSIMHAPUR",
+    "Counts": 1,
+    "lat": 22.9341253,
+    "lon": 79.0867659
+  },
+  {
+    "District": "NASHIK",
+    "Counts": 4,
+    "lat": 20.0112475,
+    "lon": 73.7902364
+  },
+  {
+    "District": "NEEMUCH",
+    "Counts": 2,
+    "lat": 24.6304465,
+    "lon": 75.1833961
+  },
+  {
+    "District": "NEW DELHI",
+    "Counts": 8,
+    "lat": 28.6138954,
+    "lon": 77.2090057
+  },
+  {
+    "District": "NOIDA",
+    "Counts": 2,
+    "lat": 28.5707841,
+    "lon": 77.3271074
+  },
+  {
+    "District": "NORTH DELHI",
+    "Counts": 4,
+    "lat": 28.6138954,
+    "lon": 77.2090057
+  },
+  {
+    "District": "NUAPADA",
+    "Counts": 2,
+    "lat": 20.7690998,
+    "lon": 82.5186285
+  },
+  {
+    "District": "PALGHAR",
+    "Counts": 1,
+    "lat": 19.6808639,
+    "lon": 72.8253734
+  },
+  {
+    "District": "PANIPAT",
+    "Counts": 1,
+    "lat": 29.3912753,
+    "lon": 76.9771675
+  },
+  {
+    "District": "PAPUM PARE",
+    "Counts": 1,
+    "lat": 27.2863666,
+    "lon": 93.6187517
+  },
+  {
+    "District": "PATAN",
+    "Counts": 1,
+    "lat": 23.7740573,
+    "lon": 71.6837347
+  },
+  {
+    "District": "PATIALA",
+    "Counts": 1,
+    "lat": 30.2090874,
+    "lon": 76.3398721
+  },
+  {
+    "District": "PATNA",
+    "Counts": 11,
+    "lat": 25.6093239,
+    "lon": 85.1235252
+  },
+  {
+    "District": "PONDICHERRY",
+    "Counts": 4,
+    "lat": 11.9340568,
+    "lon": 79.8306447
+  },
+  {
+    "District": "PRAKASAM",
+    "Counts": 1,
+    "lat": 15.5,
+    "lon": 79.5
+  },
+  {
+    "District": "PUNE",
+    "Counts": 20,
+    "lat": 18.521428,
+    "lon": 73.8544541
+  },
+  {
+    "District": "PURNEA",
+    "Counts": 1,
+    "lat": 25.7773601,
+    "lon": 87.4731227
+  },
+  {
+    "District": "RAIPUR",
+    "Counts": 14,
+    "lat": 21.2379469,
+    "lon": 81.6336833
+  },
+  {
+    "District": "RAJKOT",
+    "Counts": 11,
+    "lat": 22.3053263,
+    "lon": 70.8028377
+  },
+  {
+    "District": "RAJNANDGAON",
+    "Counts": 1,
+    "lat": 20.9727404,
+    "lon": 80.6915555
+  },
+  {
+    "District": "RANCHI",
+    "Counts": 7,
+    "lat": 23.3700501,
+    "lon": 85.3250387
+  },
+  {
+    "District": "RATLAM",
+    "Counts": 1,
+    "lat": 23.4805919,
+    "lon": 74.9177897
+  },
+  {
+    "District": "RATNAGIRI",
+    "Counts": 1,
+    "lat": 17.2826079,
+    "lon": 73.4569787
+  },
+  {
+    "District": "ROHTAK",
+    "Counts": 2,
+    "lat": 28.9010899,
+    "lon": 76.5801935
+  },
+  {
+    "District": "RUDRAPUR",
+    "Counts": 1,
+    "lat": 28.974744,
+    "lon": 79.3963951
+  },
+  {
+    "District": "RUPNAGAR",
+    "Counts": 1,
+    "lat": 31.0916808,
+    "lon": 76.5272674
+  },
+  {
+    "District": "SALEM",
+    "Counts": 1,
+    "lat": 44.9391565,
+    "lon": -123.033121
+  },
+  {
+    "District": "SANGLI",
+    "Counts": 2,
+    "lat": 17.1726928,
+    "lon": 74.5867654
+  },
+  {
+    "District": "SANGRUR",
+    "Counts": 1,
+    "lat": 30.2093363,
+    "lon": 75.8184224
+  },
+  {
+    "District": "SATARA",
+    "Counts": 3,
+    "lat": 17.6361288,
+    "lon": 74.2982781
+  },
+  {
+    "District": "SHAHDOL",
+    "Counts": 2,
+    "lat": 23.3002343,
+    "lon": 81.364771
+  },
+  {
+    "District": "SHIMLA",
+    "Counts": 1,
+    "lat": 31.1041526,
+    "lon": 77.1709729
+  },
+  {
+    "District": "SINDHUDURG",
+    "Counts": 1,
+    "lat": 16.1357193,
+    "lon": 73.6522086
+  },
+  {
+    "District": "SITAMARHI",
+    "Counts": 1,
+    "lat": 26.5876547,
+    "lon": 85.5056744
+  },
+  {
+    "District": "SOLAN",
+    "Counts": 1,
+    "lat": 30.9258958,
+    "lon": 77.0820051
+  },
+  {
+    "District": "SOLAPUR",
+    "Counts": 2,
+    "lat": 17.8499067,
+    "lon": 75.2763203
+  },
+  {
+    "District": "SONIPAT",
+    "Counts": 2,
+    "lat": 29.0033144,
+    "lon": 77.0167323
+  },
+  {
+    "District": "SONITPUR",
+    "Counts": 1,
+    "lat": 26.7677707,
+    "lon": 92.7014089
+  },
+  {
+    "District": "SOUTH DELHI",
+    "Counts": 6,
+    "lat": 28.4851694,
+    "lon": 77.1963797
+  },
+  {
+    "District": "SRINAGAR",
+    "Counts": 2,
+    "lat": 34.0747444,
+    "lon": 74.8204443
+  },
+  {
+    "District": "SUNDERGARH",
+    "Counts": 1,
+    "lat": 22.1181799,
+    "lon": 84.0361994
+  },
+  {
+    "District": "SURAT",
+    "Counts": 10,
+    "lat": 45.9383,
+    "lon": 3.2553
+  },
+  {
+    "District": "SURGUJA",
+    "Counts": 1,
+    "lat": 23.25,
+    "lon": 83
+  },
+  {
+    "District": "THANE",
+    "Counts": 4,
+    "lat": 19.1943294,
+    "lon": 72.9701779
+  },
+  {
+    "District": "THANJAVUR",
+    "Counts": 1,
+    "lat": 10.7860267,
+    "lon": 79.1381497
+  },
+  {
+    "District": "THIRUVANANTHAPURAM",
+    "Counts": 4,
+    "lat": 8.5241122,
+    "lon": 76.9360573
+  },
+  {
+    "District": "THRISSUR",
+    "Counts": 1,
+    "lat": 10.5256264,
+    "lon": 76.2132542
+  },
+  {
+    "District": "TINSUKIA",
+    "Counts": 1,
+    "lat": 27.5201658,
+    "lon": 95.5306347
+  },
+  {
+    "District": "TIRUCHIRAPPALLI",
+    "Counts": 3,
+    "lat": 10.804973,
+    "lon": 78.6870296
+  },
+  {
+    "District": "TIRUNELVELI",
+    "Counts": 2,
+    "lat": 8.722388,
+    "lon": 77.710247
+  },
+  {
+    "District": "TIRUPPUR",
+    "Counts": 2,
+    "lat": 11.1017815,
+    "lon": 77.345192
+  },
+  {
+    "District": "TRIPURA",
+    "Counts": 1,
+    "lat": 23.7750823,
+    "lon": 91.7025091
+  },
+  {
+    "District": "UDAIPUR",
+    "Counts": 3,
+    "lat": 24.578721,
+    "lon": 73.6862571
+  },
+  {
+    "District": "UDHAM SINGH NAGAR",
+    "Counts": 1,
+    "lat": 29.0480988,
+    "lon": 79.4313133
+  },
+  {
+    "District": "UDUPI",
+    "Counts": 1,
+    "lat": 13.3419169,
+    "lon": 74.7473232
+  },
+  {
+    "District": "UJJAIN",
+    "Counts": 1,
+    "lat": 23.1885131,
+    "lon": 75.7716562
+  },
+  {
+    "District": "VADODARA",
+    "Counts": 4,
+    "lat": 22.2973142,
+    "lon": 73.1942567
+  },
+  {
+    "District": "VALSAD",
+    "Counts": 1,
+    "lat": 20.4324018,
+    "lon": 73.1411716
+  },
+  {
+    "District": "VARANASI",
+    "Counts": 10,
+    "lat": 25.3356491,
+    "lon": 83.0076292
+  },
+  {
+    "District": "VELLORE",
+    "Counts": 3,
+    "lat": 12.7948109,
+    "lon": 79.0006411
+  },
+  {
+    "District": "VISAKHAPATNAM",
+    "Counts": 3,
+    "lat": 17.7231276,
+    "lon": 83.3012842
+  },
+  {
+    "District": "WARANGAL",
+    "Counts": 2,
+    "lat": 17.9819448,
+    "lon": 79.5969982
+  },
+  {
+    "District": "WARDHA",
+    "Counts": 2,
+    "lat": 20.8256231,
+    "lon": 78.6131455
+  },
+  {
+    "District": "WEST DELHI",
+    "Counts": 5,
+    "lat": 28.6479519,
+    "lon": 77.0855654
+  },
+  {
+    "District": "WEST TRIPURA",
+    "Counts": 2,
+    "lat": 23.916667,
+    "lon": 91.5
+  },
+  {
+    "District": "YAMUNANAGAR",
+    "Counts": 1,
+    "lat": 30.2112003,
+    "lon": 77.2863897
+  }
+]
